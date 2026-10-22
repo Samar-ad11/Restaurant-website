@@ -1,0 +1,866 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Our Menu | SHESS</title>
+
+   
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+   
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+    
+    <header class="menu-header">
+        <div class="container text-center">
+
+            <a href="menu.html" class="brand-name">
+                SHESS
+            </a>
+
+            <p class="brand-tagline">
+                GOOD FOOD. BEAUTIFUL MOMENTS.
+            </p>
+
+        </div>
+    </header>
+
+
+   
+    <section class="menu-hero">
+        <div class="container text-center">
+
+            <p class="section-label">
+                A TASTE OF SOMETHING SPECIAL
+            </p>
+
+            <h1>Explore Our Menu</h1>
+
+            <p class="hero-description">
+                Discover delicious flavors, freshly prepared dishes,
+                and delightful treats made to make every moment special.
+            </p>
+
+            <a href="#our-menu" class="btn explore-btn">
+                Discover Our Dishes
+                <span aria-hidden="true">&darr;</span>
+            </a>
+
+        </div>
+    </section>
+
+
+   
+    <main class="container menu-container" id="our-menu">
+
+        <div class="menu-section-heading text-center">
+
+            <p class="section-label">MADE WITH LOVE</p>
+
+            <h2>Our Delicious Selection</h2>
+
+            <p>
+                From light bites to satisfying meals and sweet treats,
+                find something you'll love.
+            </p>
+
+        </div>
+
+
+       
+        <div class="menu-search-wrapper">
+
+            <span class="search-icon" aria-hidden="true">&#9906;</span>
+
+            <input
+                type="search"
+                id="menuSearch"
+                class="form-control menu-search"
+                placeholder="Search for your favorite dish..."
+                aria-label="Search menu items">
+
+            <button
+                type="button"
+                id="clearSearch"
+                class="clear-search"
+                aria-label="Clear search"
+                hidden>
+                &times;
+            </button>
+
+        </div>
+
+
+       
+        <div class="category-filters" id="categoryFilters">
+
+            <button
+                type="button"
+                class="category-btn active"
+                data-category="all"
+                aria-pressed="true">
+                All Dishes
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="Appetizers"
+                aria-pressed="false">
+                Appetizers
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="main"
+                aria-pressed="false">
+                Main Dishes
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="desserts"
+                aria-pressed="false">
+                Desserts
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="drinks"
+                aria-pressed="false">
+                Drinks
+            </button>
+
+        </div>
+
+
+       
+        <div class="results-info">
+            <p id="resultsCount" aria-live="polite">
+                Showing 16 dishes
+            </p>
+        </div>
+
+
+        <!-- Menu Items -->
+        <div class="row g-4" id="menuItems">
+
+
+            <!-- Appetizers -->
+
+
+            <!-- 1. Crispy Chicken Tenders -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="Appetizers"
+                 data-name="crispy chicken tenders">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/chicken%20tender.jpg"
+                            alt="Crispy Chicken Tenders"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Appetizers</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Crispy Chicken Tenders</h3>
+
+                        <p>
+                            Golden crispy chicken strips served with
+                            a creamy dipping sauce.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$7.00</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+           
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="Appetizers"
+                 data-name="tomato bruschetta">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/Tomato%20Bruschetta.jpg"
+                            alt="Tomato Bruschetta"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Appetizers</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Tomato Bruschetta</h3>
+
+                        <p>
+                            Toasted bread topped with fresh tomatoes,
+                            basil, and olive oil.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$6.00</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- 3. Mozzarella Sticks -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="Appetizers"
+                 data-name="mozzarella sticks">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/Mozzarella%20Sticks.jpg"
+                            alt="Mozzarella Sticks"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Appetizers</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Mozzarella Sticks</h3>
+
+                        <p>
+                            Crispy mozzarella sticks served with
+                            rich marinara sauce.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$6.50</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- 4. Caesar Salad -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="Appetizers"
+                 data-name="caesar salad">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/caesar%20salad.jpg"
+                            alt="Caesar Salad"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Appetizers</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Caesar Salad</h3>
+
+                        <p>
+                            Fresh lettuce, parmesan cheese, crunchy
+                            croutons, and Caesar dressing.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$7.50</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- MAIN DISHES -->
+
+
+            <!-- 5. Herb-Grilled Chicken -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="main"
+                 data-name="herb-grilled chicken">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/herb%20grilled%20chicken.jpg"
+                            alt="Herb-Grilled Chicken"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Main Dishes</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Herb-Grilled Chicken</h3>
+
+                        <p>
+                            Tender grilled chicken served with seasoned
+                            rice and roasted vegetables.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$14.00</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- 6. Creamy Alfredo Pasta -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="main"
+                 data-name="creamy alfredo pasta">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/creamy%20alfrido%20pasta.jpg"
+                            alt="Creamy Alfredo Pasta"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Main Dishes</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Creamy Alfredo Pasta</h3>
+
+                        <p>
+                            Fettuccine pasta tossed in a creamy
+                            parmesan sauce.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$12.00</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- 7. Grilled Beef Steak -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="main"
+                 data-name="grilled beef steak">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/beef%20steak.jpg"
+                            alt="Grilled Beef Steak"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Main Dishes</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Grilled Beef Steak</h3>
+
+                        <p>
+                            Juicy grilled steak served with mashed
+                            potatoes and seasonal vegetables.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$19.00</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- 8. Margherita Pizza -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="main"
+                 data-name="margherita pizza">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/Margherita%20pizza.jpg"
+                            alt="Margherita Pizza"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Main Dishes</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Margherita Pizza</h3>
+
+                        <p>
+                            Classic pizza topped with tomato sauce,
+                            mozzarella, and fresh basil.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$11.00</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- 9. Grilled Salmon -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="main"
+                 data-name="grilled salmon">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/grilled%20salmon.jpg"
+                            alt="Grilled Salmon"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Main Dishes</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Grilled Salmon</h3>
+
+                        <p>
+                            Grilled salmon served with lemon butter
+                            sauce and roasted vegetables.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$18.00</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- 10. Chicken Mushroom Risotto -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="main"
+                 data-name="chicken mushroom risotto">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/chicken%20mushroom%20risotto.jpg"
+                            alt="Chicken Mushroom Risotto"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Main Dishes</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Chicken Mushroom Risotto</h3>
+
+                        <p>
+                            Creamy rice with tender chicken, mushrooms,
+                            and parmesan cheese.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$13.50</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- DESSERTS -->
+
+
+            <!-- 11. Chocolate Lava Cake -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="desserts"
+                 data-name="chocolate lava cake">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/chocolate%20lava%20cake.jpg"
+                            alt="Chocolate Lava Cake"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Dessert</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Chocolate Lava Cake</h3>
+
+                        <p>
+                            Warm chocolate cake with a rich
+                            molten center.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$6.00</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- 12. Strawberry Cheesecake -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="desserts"
+                 data-name="strawberry cheesecake">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/strawberry%20cheesecake.jpg"
+                            alt="Strawberry Cheesecake"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Dessert</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Strawberry Cheesecake</h3>
+
+                        <p>
+                            Creamy cheesecake topped with
+                            fresh strawberries.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$6.50</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- 13. Classic Tiramisu -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="desserts"
+                 data-name="classic tiramisu">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/classic%20tiramisu.jpg"
+                            alt="Classic Tiramisu"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Dessert</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Classic Tiramisu</h3>
+
+                        <p>
+                            Italian dessert layered with coffee-soaked
+                            biscuits and mascarpone cream.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$7.00</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- DRINKS -->
+
+
+            <!-- 14. Fresh Orange Juice -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="drinks"
+                 data-name="fresh orange juice">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/orange%20juice.jpg"
+                            alt="Fresh Orange Juice"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Drink</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Fresh Orange Juice</h3>
+
+                        <p>
+                            Freshly squeezed oranges
+                            served chilled.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$4.00</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- 15. Strawberry Lemonade -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="drinks"
+                 data-name="strawberry lemonada">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/strawberry%20lemonada.jpg"
+                            alt="strawberry lemonada"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Drink</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Strawberry Lemonade</h3>
+
+                        <p>
+                            Refreshing lemonade blended with
+                            sweet strawberries.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$4.50</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+            <!-- 16. Iced Caramel Latte -->
+            <div class="col-12 col-sm-6 col-lg-3 menu-item"
+                 data-category="drinks"
+                 data-name="iced caramel latte">
+
+                <article class="menu-card">
+
+                    <div class="menu-image-wrapper">
+
+                        <img
+                            src="images/iced%20caramel%20latte.jpg"
+                            alt="Iced Caramel Latte"
+                            class="menu-image"
+                            loading="lazy">
+
+                        <span class="dish-category">Drink</span>
+
+                    </div>
+
+                    <div class="menu-card-body">
+
+                        <h3>Iced Caramel Latte</h3>
+
+                        <p>
+                            Chilled espresso with milk and
+                            smooth caramel flavor.
+                        </p>
+
+                        <div class="menu-card-footer">
+                            <span class="menu-price">$5.00</span>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+
+
+        </div>
+
+
+        <div id="noResults" class="no-results d-none">
+
+            <span class="empty-icon" aria-hidden="true">&#9906;</span>
+
+            <h3>No dishes found</h3>
+
+            <p>
+                Try another search or select a different category.
+            </p>
+
+            <button type="button" id="resetMenu" class="btn reset-btn">
+                Show All Dishes
+            </button>
+
+        </div>
+
+    </main>
+
+
+    
+   
+<section class="booking-cta">
+
+    <div class="container text-center">
+
+        <p class="section-label">YOUR TABLE IS WAITING</p>
+
+        <h2>Make Your Next Meal Special</h2>
+
+        <p>
+            Gather your favorite people, discover delicious flavors,
+            and create beautiful memories around the table.
+        </p>
+
+        <a href="reservation-menu.html" class="btn booking-btn">
+            Book a Table
+            <span aria-hidden="true">&rarr;</span>
+        </a>
+
+        <div class="home-button-container">
+            <a href="../index.html" class="btn home-btn">
+                <span aria-hidden="true">&larr;</span>
+                Home Page
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    
+    <footer class="menu-footer">
+
+        <div class="container text-center">
+
+            <a href="menu.html" class="footer-brand">
+                SHESS
+            </a>
+
+            <p class="footer-tagline">
+                Good food. Beautiful moments.
+            </p>
+
+            <div class="footer-divider"></div>
+
+            <p class="copyright">
+                &copy; 2026 SHESS. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+   
+    <script src="bootstrap.min.js"></script>
+
+   
+    <script src="menu.js"></script>
+
+</body>
+
+</html>
